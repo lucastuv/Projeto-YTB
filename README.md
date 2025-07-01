@@ -20,7 +20,7 @@ Uma plataforma moderna de listagem de vídeos inspirada no YouTube, com suporte 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/videotube.git
+git clone https://github.com/lucastuv/Projeto-YTB
 
 # Navegue para o diretório
 cd videotube
@@ -156,10 +156,10 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📧 Contato
 
-- **Desenvolvedor**: [Seu Nome]
-- **Email**: seu.email@example.com
-- **LinkedIn**: [Seu LinkedIn]
-- **Portfolio**: [Seu Portfolio]
+- **Desenvolvedor**: Lucas Pimenta
+- **Email**: lucastuv@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/lucas-pimenta-26896b246/
+- **Portfolio**: https://github.com/lucastuv
 
 ## ⭐ Mostre seu apoio
 
@@ -171,6 +171,6 @@ Se este projeto te ajudou, dê uma ⭐️!
 
 **[⬆ Voltar ao topo](#-videotube---multi-platform-video-portal)**
 
-Made with ❤️ by [Seu Nome]
+Made with ❤️ by Lucas Pimenta
 
 </div>
