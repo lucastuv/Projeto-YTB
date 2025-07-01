@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTube - Plataforma Multi-Vídeos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>VideoTube</span>
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar" class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="icon-btn">
+                <i class="fas fa-video"></i>
+            </button>
+            <button class="icon-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="user-avatar">
+                <img src="https://via.placeholder.com/32x32/4285f4/ffffff?text=U" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-fire"></i>
+                    <span>Em alta</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-play"></i>
+                    <span>Inscrições</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-history"></i>
+                    <span>Histórico</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bookmark"></i>
+                    <span>Assistir mais tarde</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>Vídeos marcados</span>
+                </a>
+            </nav>
+        </aside>
+
+        <section class="content">
+            <div class="filter-bar">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Vimeo</button>
+                <button class="filter-btn">Dailymotion</button>
+                <button class="filter-btn">Twitch</button>
+                <button class="filter-btn">Tecnologia</button>
+                <button class="filter-btn">Programação</button>
+                <button class="filter-btn">JavaScript</button>
+                <button class="filter-btn">CSS</button>
+                <button class="filter-btn">Tutorial</button>
+            </div>
+
+            <div class="videos-grid">
+                <!-- Video 1 - Vimeo -->
+                <div class="video-card" data-video-url="https://vimeo.com/506157652">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="CSS Grid Masterclass">
+                        <span class="video-duration">25:14</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/6d28d9/ffffff?text=V" alt="Vimeo Creator">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">CSS Grid Layout - Complete Guide</h3>
+                            <p class="channel-name">Design Academy</p>
+                            <p class="video-meta">12K visualizações • há 1 ano</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 - Dailymotion -->
+                <div class="video-card" data-video-url="https://www.dailymotion.com/video/x7tgb2c">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="JavaScript Fundamentals">
+                        <span class="video-duration">42:18</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/ff6900/ffffff?text=D" alt="Dailymotion Creator">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">JavaScript Fundamentals for Beginners</h3>
+                            <p class="channel-name">Code Academy</p>
+                            <p class="video-meta">8.5K visualizações • há 6 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 - Wistia -->
+                <div class="video-card" data-video-url="https://fast.wistia.net/embed/iframe/abc123">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="React Workshop">
+                        <span class="video-duration">1:15:33</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/61dafb/000000?text=R" alt="React Team">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">React Hooks Deep Dive Workshop</h3>
+                            <p class="channel-name">React Training</p>
+                            <p class="video-meta">15.2K visualizações • há 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 - Twitch VOD -->
+                <div class="video-card" data-video-url="https://www.twitch.tv/videos/1234567890">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Live Coding">
+                        <span class="video-duration">2:34:12</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/9146ff/ffffff?text=T" alt="DevStreamer">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Building a Full-Stack App - Live Coding</h3>
+                            <p class="channel-name">DevStreamer</p>
+                            <p class="video-meta">3.7K visualizações • há 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 - Local/Custom -->
+                <div class="video-card" data-video-url="./videos/html-course.mp4">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="HTML Course">
+                        <span class="video-duration">58:42</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/e34c26/ffffff?text=H" alt="HTML Academy">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">HTML5 Semantic Elements Masterclass</h3>
+                            <p class="channel-name">Web Academy</p>
+                            <p class="video-meta">22.1K visualizações • há 8 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 - JW Player -->
+                <div class="video-card" data-video-url="https://content.jwplatform.com/players/abc123-def456.js">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="CSS Animation">
+                        <span class="video-duration">33:27</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/1572b6/ffffff?text=C" alt="CSS Master">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Advanced CSS Animations & Transitions</h3>
+                            <p class="channel-name">Animation Pro</p>
+                            <p class="video-meta">18.9K visualizações • há 4 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7 - Archive.org -->
+                <div class="video-card" data-video-url="https://archive.org/details/vue-js-tutorial">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Vue.js Guide">
+                        <span class="video-duration">1:45:22</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/4fc08d/ffffff?text=V" alt="Vue Academy">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Vue.js 3 Complete Guide</h3>
+                            <p class="channel-name">Vue Academy</p>
+                            <p class="video-meta">11.3K visualizações • há 5 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8 - Brightcove -->
+                <div class="video-card" data-video-url="https://players.brightcove.net/abc123/default_default/index.html">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="TypeScript Course">
+                        <span class="video-duration">2:12:45</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/007acc/ffffff?text=TS" alt="TypeScript Pro">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">TypeScript for Enterprise Applications</h3>
+                            <p class="channel-name">Enterprise Dev</p>
+                            <p class="video-meta">24.7K visualizações • há 2 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 9 - Metacafe -->
+                <div class="video-card" data-video-url="https://www.metacafe.com/watch/12345678/git-version-control">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Git Tutorial">
+                        <span class="video-duration">54:18</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/f05032/ffffff?text=G" alt="Git Master">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Git & GitHub Version Control Mastery</h3>
+                            <p class="channel-name">Version Control Pro</p>
+                            <p class="video-meta">16.8K visualizações • há 7 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 10 - Self-hosted -->
+                <div class="video-card" data-video-url="https://cdn.example.com/videos/sass-preprocessing.mp4">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Sass Tutorial">
+                        <span class="video-duration">37:33</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/cf649a/ffffff?text=S" alt="Sass Expert">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Sass/SCSS Advanced Preprocessing</h3>
+                            <p class="channel-name">CSS Preprocessor Hub</p>
+                            <p class="video-meta">9.2K visualizações • há 1 ano</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 11 - Loom -->
+                <div class="video-card" data-video-url="https://www.loom.com/share/abc123def456">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Bootstrap Framework">
+                        <span class="video-duration">1:28:17</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/7c3aed/ffffff?text=B" alt="Bootstrap Team">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Bootstrap 5 Framework Deep Dive</h3>
+                            <p class="channel-name">Framework Masters</p>
+                            <p class="video-meta">31.5K visualizações • há 4 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 12 - Kaltura -->
+                <div class="video-card" data-video-url="https://cdnapisec.kaltura.com/p/123456/sp/12345600/embedIframeJs/uiconf_id/23456789">
+                    <div class="video-thumbnail">
+                        <img src="video-thumbnail.svg" alt="Developer Tools">
+                        <span class="video-duration">42:55</span>
+                    </div>
+                    <div class="video-info">
+                        <div class="channel-avatar">
+                            <img src="https://via.placeholder.com/36x36/61dafb/000000?text=DT" alt="DevTools Expert">
+                        </div>
+                        <div class="video-details">
+                            <h3 class="video-title">Browser DevTools Mastery Workshop</h3>
+                            <p class="channel-name">Debug Academy</p>
+                            <p class="video-meta">19.4K visualizações • há 6 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script-producao.js"></script>
+</body>
+</html>
